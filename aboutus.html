@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Kilifi Rising Star Academy – Excellence in Coastal Kenya</title>
+  <meta name="description" content="Discover Kilifi Rising Star Academy: our story, mission, core values, leadership, and modern facilities in the heart of Kilifi, Kenya."/>
+  <meta name="keywords" content="Kilifi school, primary school Kilifi, secondary school Kilifi, CBC school, coastal education Kenya"/>
+  <style>
+    :root {
+      --blue: #0077B6;
+      --turquoise: #00A896;
+      --gold: #FFD166;
+      --white: #FFFFFF;
+      --warm: #F8F1E9;
+      --dark: #1A3C5A;
+      --gray: #4A4A4A;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      color: var(--gray);
+      background: var(--white);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    nav {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--blue);
+      letter-spacing: -0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+    }
+    .btn {
+      padding: 0.75rem 1.75rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #ffc94d;
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--blue);
+      color: var(--blue);
+    }
+    .btn-outline:hover {
+      background: var(--blue);
+      color: white;
+    }
+
+    .page-hero {
+      background: linear-gradient(rgba(0, 119, 182, 0.65), rgba(0, 168, 150, 0.55)),
+                  url('https://images.unsplash.com/photo-1581092160607-1ef0c3d6b4a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 9rem 1.5rem 6rem;
+    }
+    .page-hero h1 {
+      font-size: 3.4rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+    }
+    .page-hero p {
+      font-size: 1.35rem;
+      max-width: 720px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    section {
+      padding: 6rem 1.5rem;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2.6rem;
+      color: var(--blue);
+      text-align: center;
+      margin-bottom: 2.2rem;
+    }
+    h3 {
+      color: var(--turquoise);
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .mission {
+      background: linear-gradient(180deg, #f0f9ff 0%, white 100%);
+      text-align: center;
+    }
+    .mission blockquote {
+      font-size: 1.65rem;
+      font-style: italic;
+      color: var(--turquoise);
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+
+    .story-grid,
+    .team-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .story-grid img,
+    .team-intro img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .value-item {
+      background: white;
+      padding: 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .value-item:hover {
+      transform: translateY(-8px);
+    }
+
+    .location-map {
+      margin: 3rem auto 0;
+      max-width: 900px;
+      background: #f5f5f5;
+      height: 380px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      color: #666;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 5rem 1.5rem 2.5rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 3.5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .bottom-bar {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #3a5a7a;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 900px) {
+      .page-hero { padding: 7rem 1rem 5rem; }
+      .page-hero h1 { font-size: 2.6rem; }
+      .story-grid, .team-intro { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      h2 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <div class="logo">Kilifi Rising Star Academy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html" class="active">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+      <button class="btn btn-primary">Enquire Now</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Rooted in Kilifi, reaching for the stars — nurturing confident, compassionate, and capable young leaders since our founding.</p>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <h2>Our Purpose</h2>
+      <p>A vibrant community of students, parents, and educators united in the pursuit of excellence and the creation of truly transformative learning experiences.</p>
+      <blockquote>
+        “We exist so every child in our care is seen, challenged, supported, and inspired to rise — becoming not just excellent students, but exceptional human beings.”
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="story" style="background: var(--warm);">
+    <div class="container">
+      <h2>Our Story</h2>
+      <div class="story-grid">
+        <div>
+          <p>Kilifi Rising Star Academy was founded with a clear conviction: coastal Kenya deserves a world-class yet deeply community-connected school where academic ambition meets warmth, creativity, and cultural pride.</p>
+          <p>Strategically located in the serene Mnarani area along Mnarani Boatyard Road / Mnarani Mjajani Road, we benefit from Kilifi’s natural beauty and rich heritage while offering modern facilities and forward-looking education aligned with Kenya’s Competency-Based Curriculum (CBC).</p>
+          <p>From our very first classroom to today’s growing campus, our focus remains unchanged: building strong foundations in primary, seamless progression through secondary, and preparing every student not only for examinations, but for life.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1588075592446-265fcaa0d414?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Bright, modern Kenyan classroom with engaged students">
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="container">
+      <h2>Core Values That Guide Us</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>Excellence</h3>
+          <p>Striving for the highest standards in learning, character, and personal best—every day.</p>
+        </div>
+        <div class="value-item">
+          <h3>Community</h3>
+          <p>Building genuine, lasting relationships among students, families, staff, and Kilifi at large.</p>
+        </div>
+        <div class="value-item">
+          <h3>Integrity</h3>
+          <p>Honesty, respect, responsibility, and ethical courage in every action and decision.</p>
+        </div>
+        <div class="value-item">
+          <h3>Creativity & Innovation</h3>
+          <p>Encouraging original thinking, problem-solving, and embracing new ways of learning.</p>
+        </div>
+        <div class="value-item">
+          <h3>Inclusivity & Respect</h3>
+          <p>Celebrating diversity and ensuring every child feels safe, valued, and heard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-intro" style="background: white;">
+    <div class="container">
+      <h2>Our Leadership & Team</h2>
+      <div class="team-intro">
+        <img src="https://images.unsplash.com/photo-1529390079861-591de3547d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Dedicated Kenyan teacher smiling with students">
+        <div>
+          <p>Behind every smiling student is a passionate, highly-trained educator. Our leadership team—headed by an experienced principal and supported by department heads, guidance counselors, and support staff—brings decades of combined expertise in CBC implementation, child development, and holistic education.</p>
+          <p>We invest continuously in professional growth so our teachers remain at the forefront of best practices while staying deeply connected to the Kilifi community they serve.</p>
+          <p style="margin-top: 1.5rem;">[Leadership profiles & photos to be added in future site updates]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: linear-gradient(180deg, #f0f9ff, white);">
+    <div class="container">
+      <h2>Our Home in Kilifi</h2>
+      <p style="text-align:center; max-width:860px; margin:0 auto 2.5rem; font-size:1.15rem;">
+        Nestled in peaceful Mnarani, our campus combines bright, airy classrooms, well-equipped science & ICT labs, a growing library, creative arts spaces, sports courts, and safe outdoor areas — all designed to inspire curiosity and well-rounded development.
+      </p>
+      <div class="location-map">
+        [Google Maps Embed – Kilifi Rising Star Academy, Mnarani Boatyard Road / Mnarani Mjajani Road, Kilifi]
+      </div>
+      <p style="text-align:center; margin-top:1.5rem;">
+        <strong>Address:</strong> Mnarani Boatyard Road / Mnarani Mjajani Road, Kilifi, Kenya
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Kilifi Rising Star Academy</h3>
+        <p>Premier Primary & Secondary Education</p>
+        <p>Mnarani Boatyard Road / Mnarani Mjajani Road<br>Kilifi, Kenya</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Phone: 0757 408432</p>
+        <p>Mon–Fri: 6:00 AM – 6:00 PM<br>Saturday: 7:30 AM – 1:30 PM</p>
+        <div class="location-map" style="height:220px; margin-top:1.5rem;">
+          [Google Maps Embed – School Location]
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      © 2026 Kilifi Rising Star Academy. All rights reserved.<br>
+      Proudly shaping tomorrow’s leaders right here in Kilifi.
+    </div>
+  </footer>
+
+</body>
+</html>

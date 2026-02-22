@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics | Kilifi Rising Star Academy – Excellence in Primary & Secondary Education</title>
+  <meta name="description" content="Discover our academic programs at Kilifi Rising Star Academy in Kilifi, Kenya. CBC-aligned primary education and comprehensive secondary preparation for future success."/>
+  <style>
+    /* Reuse your existing CSS variables and styles – paste the full <style> block from contactus.html here for consistency */
+    :root {
+      --blue: #0077B6;
+      --turquoise: #00A896;
+      --gold: #FFD166;
+      --white: #FFFFFF;
+      --warm: #F8F1E9;
+      --dark: #1A3C5A;
+      --gray: #4A4A4A;
+    }
+    /* ... include ALL your previous styles: *, body, header, nav, logo, nav-links, btn, btn-primary, container, h2, section, etc. ... */
+    /* Add these page-specific additions: */
+    .hero {
+      background: linear-gradient(rgba(0,119,182,0.65), rgba(0,168,150,0.6)),
+                  url('https://images.unsplash.com/photo-1588075592446-265f8c4a5a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; /* Classroom or students learning – replace with real school photo if available */
+      color: white;
+      text-align: center;
+      padding: 10rem 1.5rem 7rem;
+    }
+    .hero h1 {
+      font-size: 3.6rem;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+    }
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 3rem;
+    }
+    .program-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .program-card:hover {
+      transform: translateY(-8px);
+    }
+    .program-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .program-content {
+      padding: 2rem;
+      text-align: center;
+    }
+    .program-content h3 {
+      color: var(--turquoise);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .highlights {
+      margin-top: 1.5rem;
+      text-align: left;
+    }
+    .highlights ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .highlights li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+    .highlights li::before {
+      content: "✓";
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    @media (max-width: 900px) {
+      .hero { padding: 8rem 1rem 5rem; }
+      .hero h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation (consistent across site) -->
+  <header>
+    <nav class="container">
+      <div class="logo">Kilifi Rising Star Academy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="academics.html" class="active">Academics</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+      <a href="contactus.html#form-section" class="btn btn-primary">Enquire Now</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Academics at Kilifi Rising Star Academy</h1>
+      <p style="font-size: 1.5rem; max-width: 800px; margin: 1.5rem auto;">
+        Building strong foundations today for confident, capable leaders tomorrow — rooted in excellence, discipline, and transformative learning.
+      </p>
+    </div>
+  </section>
+
+  <!-- Primary Section -->
+  <section class="section" style="background: var(--warm);">
+    <div class="container">
+      <h2 style="text-align: left;">Primary Education (Grades 1–6)</h2>
+      <div class="programs-grid">
+        <div class="program-card">
+          <!-- <img src="primary-classroom.jpg" alt="Primary students engaged in CBC activities"> --> <!-- Placeholder: use real photo -->
+          <div class="program-content">
+            <h3>Competency-Based Curriculum (CBC)</h3>
+            <p>We proudly implement Kenya's Competency-Based Curriculum, focusing on practical skills, critical thinking, and real-world application rather than rote learning.</p>
+            <div class="highlights">
+              <ul>
+                <li>Strong emphasis on literacy, numeracy, and foundational life skills</li>
+                <li>Integrated learning areas: English, Kiswahili, Mathematics, Environmental Activities, Creative Arts, Physical & Health Education</li>
+                <li>Project-based assessments and learner-centered activities</li>
+                <li>Small class sizes for personalized attention and support</li>
+                <li>Christian values and moral education woven throughout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align: left;">Secondary Education (Forms 1–4)</h2>
+      <div class="programs-grid">
+        <div class="program-card">
+          <!-- <img src="secondary-students.jpg" alt="Secondary students in science lab or class"> -->
+          <div class="program-content">
+            <h3>Comprehensive Preparation for KCSE & Beyond</h3>
+            <p>Our secondary program bridges primary foundations to national examinations (KCSE) while nurturing leadership, independence, and future-ready skills.</p>
+            <div class="highlights">
+              <ul>
+                <li>Core subjects: English, Kiswahili, Mathematics, Biology, Chemistry, Physics, History & Government, Geography, CRE/IRE</li>
+                <li>Electives including Business Studies, Agriculture, Computer Studies (where available)</li>
+                <li>Targeted exam preparation with past papers, revision sessions, and mock exams</li>
+                <li>Holistic development: leadership training, career guidance, and mentorship</li>
+                <li>Integration of technology, research projects, and community service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Holistic / Overall Academics -->
+  <section class="section" style="background: linear-gradient(to bottom, #f0f9ff, white);">
+    <div class="container">
+      <h2>Holistic Academic Approach</h2>
+      <p style="font-size: 1.25rem; max-width: 900px; margin: 0 auto 3rem; text-align: center;">
+        At Kilifi Rising Star Academy, academics go hand-in-hand with character building. We foster curiosity, resilience, discipline, and a love for learning in a supportive coastal environment.
+      </p>
+      <div style="text-align: center;">
+        <a href="contactus.html#form-section" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Enquire About Our Programs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (consistent) -->
+  <footer style="background: var(--dark); color: white; padding: 5rem 1.5rem 2.5rem;">
+    <div class="container footer-grid">
+      <div>
+        <h3>Kilifi Rising Star Academy</h3>
+        <p>Premier Primary & Secondary Education</p>
+        <p>Mnarani Boatyard Road / Mnarani Mjajani Road<br>Kilifi, Kenya</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="index.html" style="color: var(--gold);">Home</a></li>
+          <li><a href="aboutus.html" style="color: var(--gold);">About Us</a></li>
+          <li><a href="academics.html" style="color: var(--gold);">Academics</a></li>
+          <li><a href="contactus.html" style="color: var(--gold);">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Phone: 0757 408432</p>
+        <p>Mon–Fri: 6:00 AM – 6:00 PM<br>Sat: 7:30 AM – 1:30 PM</p>
+      </div>
+    </div>
+    <div class="bottom-bar" style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #3a5a7a; font-size: 0.95rem; opacity: 0.9;">
+      © 2026 Kilifi Rising Star Academy. All rights reserved.<br>
+      Proudly shaping tomorrow’s leaders right here in Kilifi.
+    </div>
+  </footer>
+
+</body>
+</html>
